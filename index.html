@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+  <head>
+    <title>Slack</title>
+  </head>
+
+  <body style="height: 100%">
+    <script>
+     // Load native UI library
+    var gui = require('nw.gui'); //or global.window.nwDispatcher.requireNwGui() (see https://github.com/rogerwang/node-webkit/issues/707)
+
+    // Get the current window
+    var win = gui.Window.get();
+
+    // Minimize the window
+    win.close();
+
+    // Create a new window and get it
+    var new_win = gui.Window.open('https://slack.com/signin');
+    </script>
+  </body>
+</html>
+
